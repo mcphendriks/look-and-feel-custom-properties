@@ -32,19 +32,18 @@
     color: white;
   }
    
-  .logo-en-tekst {
+  .header-nav {
     padding-bottom: 30px;
     line-height: 1.15;
     margin-left: -25px;
   }
    
-  .logo-en-tekst>p {
+  .header-nav>p {
     opacity: 0.5;
   }
    
-  .logo-template {
+  .header-nav-logo {
     width: 130px;
-    /* width: 1.125rem clamp(1rem, calc(120 / 1440 * 100vw), 1rem); */
   }
    
   nav li {
@@ -88,7 +87,7 @@
     margin-top: 2vh;
   }
    
-  .h1-introduction{
+  .section-introduction h1{
     color: #333467;
     font-size: 32px;
   }
@@ -102,7 +101,7 @@
   .important-introduction > li{
     width: 95%;
   }
-  /* INTRODUCTION END */
+ 
    
   section>h2 {
     color: #333467;
