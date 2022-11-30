@@ -1,3 +1,10 @@
+:root {
+    --primary-clr: #4E7141;
+    --secondary-clr: #333467;
+    --tertiary-clr: #F26F21;
+    --white-clr: #FFF;
+}
+
 * 
 {
     box-sizing: border-box;
@@ -9,6 +16,7 @@
     /* padding-top toegevoegd door de fixed header (het valt er anders achter) */
     scroll-padding-top: 13vh;
     scroll-behavior: smooth;
+    --line-height: 1.5rem;
   }
    
   body {
@@ -16,7 +24,7 @@
     flex-direction: column;
     min-height: 100vh;
     font-family: sans-serif;
-    line-height: 1.5;
+    line-height: var(--line-height);
     color: black;
   }
 
@@ -27,17 +35,17 @@
     flex-direction: column;
     align-items: center;
     position: fixed;
-    background-color: #333467;
+    background-color: var(--secondary-clr);
     width: 20%;
     height: 100%;
-    border-right: #F26F21 solid 5px;
+    border-right: var(--tertiary-clr) solid 5px;
     padding-top: 50px;
-    color: white;
+    color: var(--white-clr);
   }
    
   .header-nav {
     padding-bottom: 30px;
-    line-height: 1.15;
+    line-height: var(--line-height);
     margin-left: -25px;
   }
    
@@ -57,7 +65,7 @@
   nav li a {
     font-size: 1rem;
     text-decoration: none;
-    color: #ffffff;
+    color: var(--white-clr);
     font-weight: light;
     align-self: flex-start;
     display: block;
@@ -65,7 +73,7 @@
   }
    
   .active {
-    color: white;
+    color: var(--white-clr);
     background-color: #9191ae;
     border-radius: 5px;
   }
@@ -81,7 +89,7 @@
   .main-container-intro {
     margin: 100px;
     color: #727272;
-    background: #ffffff;
+    background: var(--white-clr);
     padding-bottom: 100px;
     border-bottom: #dfdfdf solid 3px;
   }
@@ -92,7 +100,7 @@
   }
    
   .main-container-intro h1{
-    color: #333467;
+    color: var(--secondary-clr);
     font-size: 32px;
   }
    
@@ -107,12 +115,12 @@
   }
 
   section>h2 {
-    color: #333467;
+    color: var(--secondary-clr);
     font-size: 26px;
   }
    
   h2 {
-    border-bottom: #ffffff 2px solid;
+    border-bottom: var(--white-clr) 2px solid;
     margin-bottom: 1rem;
   }
    
@@ -196,7 +204,7 @@
    .section-form-example-html {
     background-color: #D6D6E1;
     width: 100%;
-    height: 32remx;
+    /* height: 32rem; */
     border-radius: 5px;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -239,10 +247,10 @@
    .section-form-box {
     text-align: center;
     font-family: arial;
-    color: #515183;
+    color: var(--secondary-clr);
   }
    .section-form-button {
-      background-color: #333467;
+      background-color: var(--secondary-clr);
       border: none;
       color: white;
       padding: 16px 32px;
@@ -272,11 +280,11 @@
   }
    
   .section-imagery-h4{
-    padding-top: 30px;
+    padding-top: 1rem;
   }
    
   .section-imagery-p2{
-    padding-bottom: 20px;
+    padding-bottom: 1rem;
   }
    
   .two-values-image {
@@ -328,7 +336,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
-    line-height: 150%;
+    line-height: var(--line-height);
     color: #333467;
   }
 
@@ -347,7 +355,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1.2rem;
-  line-height: 150%;
+  line-height: var(--line-height);
   color: #333467;
 }
  
@@ -598,7 +606,7 @@ table {
   .footer-article {
     display: block;
   }
-  .footer-wel-doen {
+  .footer-do {
    
     width: 100%;
   }
