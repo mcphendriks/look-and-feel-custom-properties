@@ -4,7 +4,10 @@
     --tertiary-clr: #F26F21;
     --white-clr: #FFF;
     --radius-value: 5px;
+    --text-color: #000;
     --font-name: arial, helvetica, sans-serif; 
+    --line-height: 1.5rem;
+    --font-weight: bold;
 }
 
 * 
@@ -18,7 +21,7 @@
     /* padding-top toegevoegd door de fixed header (het valt er anders achter) */
     scroll-padding-top: 13vh;
     scroll-behavior: smooth;
-    --line-height: 1.5rem;
+
   }
    
   body {
@@ -26,8 +29,7 @@
     flex-direction: column;
     min-height: 100vh;
     font-family: var(--font-name);
-    line-height: var(--line-height);
-    color: black;
+    color: var(--text-color);
   }
 
   /* HEADER */
@@ -238,7 +240,7 @@
     
    .section-form-code input:focus-visible {
       outline: 2px solid #333467;
-      border-radius: 3px;
+      border-radius: var(--radius-value);
    }
     
    .section-form-code textarea:focus-visible {
@@ -336,7 +338,7 @@
    
 .typography-highlighted-text-text{
     font-family: var(--font-name);
-    font-weight: bold;
+    font-weight: var(--font-weight);
     font-size: 1.2rem;
     line-height: var(--line-height);
     color: #333467;
@@ -355,7 +357,7 @@
  
 .typography-highlighted-text-text{
   font-family: var(--font-name);
-  font-weight: bold;
+  font-weight: var(--font-weight);
   font-size: 1.2rem;
   line-height: var(--line-height);
   color: #333467;
@@ -396,7 +398,7 @@ table {
  
 .durability-text p{
   font-size: 32px;
-  font-weight: bold;
+  font-weight: var(--font-weight);
 }
  
   /* BRANCHE ICON */
@@ -468,7 +470,7 @@ table {
   .btn-kader button {
     padding: 1em 3.8em 1em;
     margin: 1.5em 0em 0em 3em;
-    font-weight: bold;
+    font-weight: var(--font-weight);
     border-radius: var(--radius-value);
     cursor: pointer;
   }
