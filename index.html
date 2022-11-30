@@ -34,8 +34,8 @@
     </nav>
   </header>
 
-  <main>
-    <section class="section-introduction">
+  <main class="main-container">
+    <section class="main-container-intro">
       <h1>Styleguide Plantswap V1.0</h1>
       <p>Dit is de styleguide gemaakt voor Plantswap. Een living styleguide biedt consistentie tussen merkuitingen, het
         is een referentiekader voor je team en nieuwe ontwerpers/developers kunnen sneller aan de slag met een goede
@@ -43,7 +43,7 @@
       </p>
       <p>
         Belangrijke punten: 
-        <ul class="important-introduction">
+        <ul>
           <li>Het is naslagwerk, dus makkelijk en snel.</li>
           <li>Een merk ontwikkelt, dus moet de styleguide up-to-date gehouden worden.</li>
         </ul>
@@ -56,18 +56,18 @@
       <h3>Header</h3>
       <h4>Wel doen: desktop versie</h4>
       <p>
-        <img src="./assets/header/headerdesktop.png" class="fotos-header-onderdeel-desktop">
+        <img src="./assets/header/headerdesktop.png" class="section-header-img">
 
         <p>Op de desktopversie staat het logo van de buurtcampus links en het menu naar de andere webpaginas van de
           buurtcampus rechts. </p>
 
-        <img src="./assets/header/headerdesktop-geselecteerd.png" class="fotos-header-onderdeel-desktop">
+        <img src="./assets/header/headerdesktop-geselecteerd.png" class="section-header-img">
         <p>De links naar de verschillende webpaginas zijn in het lettertype Arial en bold, de kleur van de links is de
           blauwe kleur uit de huisstijl als niet op een pagina, de oranje als je op een specifieke van deze paginas zit.
         </p>
         De font-size van de links is 16px.
       </p>
-      <img src="./assets/header/headerdesktop - padding.png" class="fotos-header-onderdeel-desktop">
+      <img src="./assets/header/headerdesktop - padding.png" class="section-header-img">
       <p>Boven en onder het menu en het logo zit een padding van 25px.</p>
 
 
@@ -81,7 +81,7 @@
         huisstijl met witte letters.
         Het lettertype is Arial en bold.</p>
       <p> De font-size van de links is 16px. </p>
-      <img src="./assets/header/headermobieluitgeklapt-padding.png" class="fotos-header-onderdeel-desktop">
+      <img src="./assets/header/headermobieluitgeklapt-padding.png" class="section-header-img">
       <p>Aan de linkerkant van de menu items is een padding van 20px.</p>
       <img src="./assets/header/headermobieluitgeklapt-geselecteerd.png">
       <p>Als je op een van de webpaginas zit, wordt de link van die pagina de oranje van de huisstijl.</p>
@@ -92,7 +92,7 @@
 
     <section id="logo">
       <h2>Logo</h2>
-      <div class="container-logo-img">
+      <div class="section-logo-img">
         <img src="./assets/logo-favicon/MicrosoftTeams-image (1) - kopie.png" alt="logo plantswap blauwe tekst oranje blad">
         <img src="./assets/logo-favicon/MicrosoftTeams-image - kopie.png" alt="logo plantswap blauwe tekst groen blad">
       </div>
@@ -129,7 +129,7 @@
         screen reader.</p>
     </section>
 
-    <section class="section-color" id="kleur">
+    <section class="section-color" id="color">
       <h2>Kleur</h2>
       <p>
         Kleuren brengen onze merkpersoonlijkheid en waarden over, maar helpen gebruikers ook om door de interface te
@@ -148,42 +148,38 @@
       <img src="assets/colours/color-schedule-buurtcampus.png" width=50% alt="Kleur Schema">
     </section>
 
-    <!-- Content forms -->
-    <section id="formulieren">
-      <h2>Formulier</h2>
-
+   
+    <section class="section-forms" id="forms">
+  <h2>Formulier</h2>
   <h3>Tekst input</h3>
   <p>Een tekstinvoer is een veld waarin gebruikers tekst kunnen invoeren</p>
-  <br>
+  
   <h4>Anatomie</h4>
-  <p>Tekstinvoer kan gebruikersinvoer op twee verschillende manieren weergeven:</p>
-  <br>
-  <li><b><em>Tekstinvoer met een enkele regel tekst</em></b></li>
+  <p>Tekstinvoer met een enkele regel tekst:</p>
+  <article class="form-kader1">
+    <img class="form-kader-img" src="assets/forms/anatomy-1.svg" alt="form">
+    <ul class="form-kader-ul">
+      <li>1. Container </li>
+      <li>2. Leidend / eindigend Icoon (optioneel)</li>
+      <li>3. Label</li>
+    </ul>
+  </article>
 
-  <div class="container-anatomy-1">
-    <img class="img-anatomy" src="assets/forms/anatomy-1.svg"/>
-    <ol>
-      <li>Container</li>
-      <li>Label</li>
-      <li>Placeholder / Input text (optional)</li>
-    </ol>
-  </div>
-
-  <li><b><em>Tekstgebied met meerdere regels tekst in een tekstinvoer met vaste hoogte</em></b></li>
-  <div class="container-anatomy-2">
-    <img class="img-anatomy" src="assets/forms/anatomy-2.png" />
-    <ol>
-      <li>Container</li>
-      <li>Label</li>
-      <li>Placeholder</li>
-      <li>Counter</li>
-    </ol>
-  </div>
+  <p>Tekstgebied met meerdere regels tekst in een tekstinvoer met vaste hoogte:</p>
+  <article class="form-kader2">
+    <img class="form-kader-img" src="assets/forms/anatomy-2.png" alt="form">
+    <ul class="form-kader-ul">
+      <li>1. Container </li>
+      <li>2. Leidend / eindigend Icoon (optioneel)</li>
+      <li>3. Label</li>
+      <li>3. Teller</li>
+    </ul>
+  </article>
 
   <h4>Gebruik</h4>
-  <p>Vertel hoe dingen toegepast moeten worden.</p>
-  <ul class="container-wrapper">
-    <li><img class="img-wrapper" src="assets/forms/label.svg"/>
+  <p>Hier wordt Verteld hoe dingen toegepast moeten worden.</p>
+  <ul class="section-wrapper">
+    <li><img class="section-wrapper-img" src="assets/forms/label.svg"/>
       <p><b>Label</b></p>
       <p>Vermijd het maskeren van het label: houd het label altijd zichtbaar).</p>
     </li>
@@ -204,7 +200,7 @@
   </ul>
 
     <h4>HTML Code</h4>
-      <pre class="form-example-code-html">
+      <pre class="section-form-example-html">
         <code>
           &lt;form method="POST" class="form-code">&lt;/form&gt;
            &lt;p&gt;&lt;label&gt;Naam:
@@ -226,7 +222,7 @@
       </pre>
   
       <h4>CSS code</h4>
-      <pre class="form-example-code-css">
+      <pre class="section-form-example-css">
       <code>
         .form-code {
           background-color: #D6D6E1;
@@ -279,8 +275,9 @@
       </code>
     </pre>
     </div>
+
     <h4>Visuele HTML & CSS code</h4>
-    <form method="POST" class="form-code">
+    <form method="POST" class="section-form-code">
       <p>
         <label>Naam:
           <input name="name" required autocomplete="send name">
@@ -307,9 +304,9 @@
         </label>
       </p>
     
-      <p class="form-box">
+      <p class="section-form-box">
         <title>Verstuur email</title>
-        <button class="form-button" type="submit">Verstuur E-mail</button>
+        <button class="section-form-button" type="submit">Verstuur E-mail</button>
       </p>
     </form>
     </section>
@@ -338,14 +335,14 @@
         pagina).</p>
     </section>
 
-    <section id="beeldgebruik">
+    <section id="section-imagery">
       <h2>Beeldgebruik</h2>
 
       <h4>Wel doen</h4>
-      <p class="p-beeldgebruik">De meeste afbeeldingen zullen van stekjes en planten zijn. Verder zal er veel gebruik gemaakt word van groene
+      <p class="section-imagery-p">De meeste afbeeldingen zullen van stekjes en planten zijn. Verder zal er veel gebruik gemaakt word van groene
         kleuren die passen bij de huisstijl.
         Om afbeeldingen afgeronde hoeken te geven word er gebruik gemaakt van een one - value border radius:
-      <pre class="code-voorbeeld-beeldgebruik">
+      <pre class="imagery-code-example">
           <code>
             <p>
               .border-radius-image {
@@ -358,92 +355,92 @@
         </pre>
       <img class="border-radius-image" src="assets/beeldgebruik/stekjes-workshop.jpeg" alt="image-borderradius">
 
-      <h4 class="h4-beeldgebruik">Niet doen</h4>
-      <p class="p2-beeldgebruik">We maken geen gebruikt van two, tree of four values. Dit is dat je bepaalde hoeken wel afrond, en sommige
+      <h4 class="section-imagery-h4">Niet doen</h4>
+      <p class="section-imagery-p2">We maken geen gebruikt van two, tree of four values. Dit is dat je bepaalde hoeken wel afrond, en sommige
         vierkant laat. Het volgende voorbeeld
         is een two values border-radius:</p>
       <br>
       <img class="two-values-image" src="assets/beeldgebruik/stekjes-workshop.jpeg" alt="image-twovauleusborderradius">
     </section>
 
-    <section id="typografie">
+    <section id="typography">
       <h2>Typografie</h2>
 
-      <article class="typografie-box">
+      <article class="section-typography">
         <h3>Basis Text</h3>
-        <div class="basis-text">
+        <div class="typography-text">
 
-          <div class="text-family">
+          <div class="typography-text-family">
             <h4>Family</h4>
             <p>Arial</p>
           </div>
 
-          <div class="text-size">
+          <div class="typography-text-size">
             <h4>Size</h4>
             <p>1rem</p>
             <p>16px</p>
           </div>
 
-          <div class="text-lineheight">
+          <div class="typography-text-lineheight">
             <h4>Line Height</h4>
             <p>140%</p>
           </div>
 
-          <div class="text-color">
+          <div class="typography-text-color">
             <h4>Color</h4>
             <p>#333467</p>
           </div>
 
-          <div class="text-text">
+          <div class="typography-text-text">
             <p>Grumpy wizards make a toxic brew for the jovial queen.</p>
           </div>
         </div>
 
         <h3>Highlighted Text</h3>
-        <div class="highlighted-text">
+        <div class="typography-highlighted-text">
 
-          <div class="text-family">
+          <div class="typography-text-family">
             <h4>Family</h4>
             <p>Arial (Bold)</p>
           </div>
 
-          <div class="text-size">
+          <div class="typography-text-size">
             <h4>Size</h4>
             <p>1.2rem</p>
             <p>19px</p>
           </div>
 
-          <div class="text-lineheight">
+          <div class="typography-text-lineheight">
             <h4>Line Height</h4>
             <p>150%</p>
           </div>
 
-          <div class="color">
+          <div class="typography-color">
             <h4>Color</h4>
             <p>#333467</p>
           </div>
 
-          <div class="highlighted-text-text">
+          <div class="typography-highlighted-text-text">
             <p>Grumpy wizards make a toxic brew for the jovial queen.</p>
           </div>
         </div>
 
         <h3>Text-Alignment</h3>
-        <div class="text-alignment">
+        <div class="typography-text-alignment">
           <img src="assets/typografie/text_alignment.png">
           <p>Normale text dient <b>links</b> uitgelijnd te worden, met een maximale regellengte van <b>30rem</b></p>
         </div>
       </article>
 
-      <article class="typografie-box">
-        <div class="headings">
+      <article class="section-typography">
+        <div class="typography-headings">
           <h4>Headings</h4>
 
-          <div class="heading-alignment">
+          <div class="typography-heading-alignment">
             <img src="assets/typografie/heading_alignment.png">
             <p>Headings dienen <b>gecentreerd</b> boven text of elementen geplaatst te worden.</p>
           </div>
-       <div class="typografie-table">
+       <div class="typography-typografie-table">
           <table>
             <tr>
               <th>Heading</th>
@@ -467,7 +464,7 @@
           <p>Headings dienen volgens semantische volgorde de aangegeven groottes te hebben.</p>
         </div>
 
-        <ul class="duurzaamheid-text">
+        <ul class="durability-text">
           <li>
             <p>Duurzaamheid</p>
           </li>
@@ -510,7 +507,7 @@
       <h2>Buttons</h2>
 
       <h3>Wel doen</h3>
-      <p class="p-button">
+      <p class="button-p">
         Een knop is een klikbaar element dat wordt gebruikt om een actie uit te voeren.
         Het bevat een tekstlabel en er kan een ondersteunend pictogram worden weergegeven.
       </p>  
@@ -518,11 +515,11 @@
       <table class="table1">
         <tr>
           <td class="td-button">
-            <img class="gebruik1" src="./assets/buttons/btn-gebruik.png" alt="Gebruik1">
+            <img class="td-img" src="./assets/buttons/btn-gebruik.png" alt="Gebruik1">
             <p> Gebruik een knop om acties mogelijk te maken die belangrijk zijn voor een gebruiker.</p>
           </td>
           <td class="td-button">
-            <img class="gebruik1" src="./assets/buttons/btn-gebruik2.png" alt="Gebruik2">
+            <img class="td-img" src="./assets/buttons/btn-gebruik2.png" alt="Gebruik2">
             <p>
               Wanneer twee knoppen nauw worden gebruikt, moeten knoppen worden benadrukt.
             </p>
@@ -538,7 +535,7 @@
       </p>
 
       <article class="btn-kader2">
-        <img class="btn-plus" src="./assets/buttons/btn.png" alt="button">
+        <img class="btn-kader2-img" src="./assets/buttons/btn.png" alt="button">
         <ul class="btn-ul">
           <li>1. Container </li>
           <li>2. Leidend / eindigend Icoon (optioneel)</li>
@@ -554,7 +551,7 @@
         op verschillende manieren te tonen, zo kunnen we de nadruk leggen welke echt van belang is en welke minder.
       </p>
 
-      <h3 class="btn-opties-h3">Kleur Opties</h3>
+      <h3 class="btn-h3">Kleur Opties</h3>
       <p>Je kan als primaire kleur ook gebruik maken van de kleur groen, hover <strong>moet</strong> oranje zijn.</p>
 
       <article class="btn-kader">
@@ -589,7 +586,7 @@
 
       <h3> HTML-Voorbeeld</h3>
       
-      <div class="code-revieuw"> 
+      <div class="code-review"> 
         <pre>
           <code>
             &lt;article class="btn-kader"&gt;
@@ -603,7 +600,7 @@
 
       <h3> CSS-Voorbeeld</h3>
       
-      <div class="code-revieuw"> 
+      <div class="code-review"> 
         <pre>
           <code>
             .btn1 {
@@ -632,10 +629,10 @@
       <h2>Footer</h2>
 
       <article class="footer-article">
-        <div class="footer-wel-doen">
+        <div class="footer-do">
           <h3>Wel doen</h3>
           <h4>Toepassen van het logo</h4>
-          <div class="wel-doen-blaadje">
+          <div class="do-img">
             <img src="assets/footer/blaadjes 1.png" alt="Footer-logo">
             <p>
               css:
@@ -643,14 +640,14 @@
               height: 132px;
             </p>
           </div>
-          <h4 class="kleurgebruik-h4">kleurgebruik</h4>
+          <h4 class="color-h4">kleurgebruik</h4>
           <img src="assets/footer/Variant3.png" width="150px" height="132px" alt="Property">
         </div>
 
-        <div class="footer-wel-doen">
+        <div class="footer-do">
           <h3>Niet doen</h3>
           <H4>Toepassen van het logo</H4>
-          <div class="wel-doen-blaadje">
+          <div class="do-img">
             <img src="assets/footer/blaadjes 1 (1).png" alt="Footer-logo2">
             <p> css:
               Width: 120px;
