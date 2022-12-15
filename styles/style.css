@@ -25,59 +25,54 @@ html {
 
 body {
   display: flex;
-  flex-direction: column;
   min-height: 100vh;
   font-family: var(--font-name);
   color: var(--text-color);
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
+.header-navbar {
+  padding-top: 50px;
   background-color: var(--secondary-clr);
   width: 20%;
   height: 100%;
-  border-right: var(--tertiary-clr) solid 5px;
-  padding-top: 50px;
+  position: fixed;
+  overflow: auto;
+}
+
+.header-navbar-content a {
+  display: block;
   color: #fff;
-}
-
-.header-nav {
-  padding-bottom: 30px;
-  line-height: var(--line-height);
-  margin-left: -25px;
-}
-
-.header-nav > h1 {
-  opacity: 0.5;
-  font-size: 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-top: 2rem;
+  padding-left: 6rem;
+  font-size: 1rem;
+  font-weight: light;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .header-nav-logo {
   width: 130px;
+  margin-left: 4rem;
 }
 
-nav li {
-  list-style-type: none;
-  padding-top: 1vh;
-}
-
-nav li a {
-  font-size: 1rem;
-  text-decoration: none;
+.header-navbar-intro > h1 {
+  opacity: 0.5;
+  font-size: 20px;
+  margin-left: 4rem;
   color: #fff;
-  font-weight: light;
-  align-self: flex-start;
-  display: block;
-  padding: 10px 60px 10px 10px;
+}
+
+li {
+  list-style: none;
 }
 
 .active {
   color: var(--white-clr);
   background-color: #9191ae;
   border-radius: var(--radius-value);
+  width: 100%;
 }
 
 /* MAIN */
@@ -168,14 +163,16 @@ h2 {
 
 .form-kader-img {
   background-color: #d6d6e1;
-  width: 400px;
-  height: 300px;
   padding: 1rem;
-  border-radius: (var(--radius-value));
+  border-radius: var(--radius-value);
 }
 
 .form-kader-ul {
   padding: 2.2rem 4rem 1rem;
+}
+
+.form-article-wrapper {
+  margin-top: 10rem;
 }
 
 .section-wrapper {
@@ -188,7 +185,8 @@ h2 {
 }
 
 .section-wrapper li {
-  padding: 0 20px 0 10px;
+  max-width: 18rem;
+  margin-left: 1rem;
 }
 
 .section-wrapper-img {
@@ -205,22 +203,22 @@ h2 {
 
 .section-form-example-css,
 .section-form-example-html {
+  background-color: var(--background-code-clr);
   width: 100%;
-  height: 32rem;
   border-radius: var(--radius-value);
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 .section-form-code {
+  margin-top: 1rem;
   background-color: var(--background-code-clr);
   width: 60%;
-  height: 32rem;
   padding: 1rem;
   border-radius: var(--radius-value);
 }
 
-.section-form input,
+.section-form-code input,
 textarea {
   width: 100%;
   padding: 10px 10px;
@@ -268,26 +266,30 @@ textarea {
 }
 
 /* BRANCHE IMAGERY */
-.section-imagery-p {
+.section-imagery {
   padding-bottom: 30rem;
 }
 .imagery-code-example {
-  float: right;
-  padding-right: 90px;
-  padding-top: 30px;
+  display: flex;
+  justify-content: left;
+  margin-top: 1rem;
+  background-color: var(--background-code-clr);
+  max-width: 30rem;
+  border-radius: var(--radius-value);
 }
 
 .border-radius-image {
+  margin-top: 1rem;
   border-radius: var(--radius-value);
   width: 30em;
 }
 
 .section-imagery-h4 {
-  padding-top: 1rem;
+  margin-top: 1rem;
 }
 
 .section-imagery-p2 {
-  padding-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .two-values-image {
@@ -524,10 +526,10 @@ td {
 }
 
 .code-review {
-  background-color: var(--background-code-clr);
+  background-color: #d6d6e1;
   width: 100%;
-  height: 32rem;
-  border-radius: var(--radius-value);
+  height: 32remx;
+  border-radius: 5px;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -605,3 +607,39 @@ td {
 }
 
 /* CONTAINER QUERY */
+
+@media screen and (max-width: 70em) {
+  section > h2 {
+    color: var(--tertiary-clr);
+  }
+
+  .header-navbar {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    position: fixed;
+  }
+
+  .header-navbar-content a {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: light;
+    float: left;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .header-nav-logo {
+    width: 130px;
+    margin-left: 2rem;
+  }
+
+  main {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 5rem;
+  }
+}
